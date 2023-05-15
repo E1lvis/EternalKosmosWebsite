@@ -39,7 +39,7 @@
     color: transparent;
     border: none;
     outline: transparent;
-    background: black;
+    background: white;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -48,7 +48,7 @@
 {
     color: transparent;
     outline: none;
-    background: black;
+    background: white;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: blue;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
