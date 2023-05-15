@@ -50,6 +50,7 @@ header h1{
 }
 .navContainer{
 height: 62px;
+z-index: 1000;
 }
 nav{
     height: 70px;
@@ -70,6 +71,7 @@ nav ul{
     list-style-type: none;
     padding: 10px;
     color: black;
+    
 }
 nav li{
     background-image: var(--egg);
@@ -650,6 +652,7 @@ background effect. The concept is the same for the background of a div, by incre
     flex-direction: column;
     text-align: center; 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
 }
 
 .partsSliderContainer{
@@ -735,4 +738,14 @@ background effect. The concept is the same for the background of a div, by incre
     border-radius: inherit;
 }
         
-        
+.computerCardV2{
+    position:relative;
+   
+    height: 50vh;
+    overflow: hidden;
+    /*box-shadow: 0 4px 8px 0 yellow;*/   
+    display: flex;
+    border: transparent solid;
+    transition: all 1s ease-in-out;  
+    align-items: center;
+}
