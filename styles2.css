@@ -1,0 +1,738 @@
+:root{
+    --void: #0E0B16;
+    --fuschia: #A239CA;
+    --jewel: #4717F6;
+    --stark: #E7DFDD;
+    --blueish: #3960CA;
+    --lightBlueish: #39A8CA;
+
+    
+    --customBlue: #062F4F;
+    --lightPurple: #813772;
+    --ember: #B82601;
+    --egg: #F5F5F5;
+    --customYello: #BFD641;
+
+    --EKLightPurple: #b9a5d8;
+    --EKLightBlue: #4bb6f6;
+    --EKYellow: #ffe300;
+}
+
+html{
+    opacity: 1;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration: transparent underline;
+    transition: all .5s ease-in-out;
+}
+a:hover{
+    color: var(--jewel);
+    text-decoration: black underline;
+}
+header h1{
+    color: var(--jewel);
+}
+.navContainer{
+height: 62px;
+}
+nav{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--egg);
+    width:100%;
+    z-index: 1000;
+}
+#navCompanyName{
+    float: left;
+    font-size: larger;
+
+    
+}
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    color: black;
+}
+nav li{
+    background-image: var(--egg);
+    display: inline-block;
+    padding-right: 10px;
+    background-size: 100% 3px, 0% 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: all 400ms ease-in-out;
+}
+
+nav li:hover{
+    color: var(--jewel);
+    background-size: 100% 3px, 0% 3px;
+}
+.first{
+    top: 40px;
+    background-color: red;
+    
+}
+.infoBox{
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+}
+#navigationItems{
+    text-align: center;   
+}
+ 
+.videoContainer{
+    background-image: linear-gradient(140deg,  var(--EKYellow), var(--jewel), var(--EKLightBlue));
+    /*background-color: var(--void);*/
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: 1px solid var(--customYello);
+    background-size: 235% 235%;
+    transition: all 1s ease-in-out;
+    animation: backgroundAnimation 8s ease-in infinite; 
+    
+}
+/*Note for future refernce, I started with 0% 50% and would get a stutter
+thats because the position is originally 0 0 so it would stutter in the transition */
+@keyframes backgroundAnimation {
+    50%{   background-position: 0% 0%;
+    }
+    70%{   background-position: 100% 0%;
+    }
+    100%{  background-position: 0% 0%;}
+}
+/*
+Note: Decided not to use the animation on text for now as I am not good at color or design, but I want to keep this here in case
+I do implement it well in the future.
+Documentation/Citation for concepts used above
+Website:https://cssgradient.io/blog/css-gradient-text/
+
+Source Code: h1 {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+The code above creates a background inside the text, in this case a linear gradient background. 
+background-clip and text-fill-color set the backgroud to be contained within the letters themselves
+text fill color is set to trasnparent to allow the gradient to be seen, in this case I found that color:transparent works as well
+
+Animation Documentation
+Website: https://codepen.io/P1N2O/pen/pyBNzX
+Source Code:body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+Using both concepts above, the animation is created by fitting the gradient background within the text itself.
+Afterwards, the background is enlarged and moved by around by an animation keyframe which gives it the moving 
+background effect. The concept is the same for the background of a div, by increasing its size, the animation simply moves the background image around.
+*/
+#overlayTextContainer{
+    position: absolute;
+    bottom: 25%;
+    left: 25%;
+    font-weight: normal;
+    color: white;
+}
+#overlayTextContainer2{
+    position: absolute;
+    bottom: 25%;
+    right: 40%;
+    font-weight: normal;
+    color: white;
+}
+.overlayButton{
+    position: absolute;
+    display: inline-block;
+    background-color: var(--EKLightBlue);
+    border-radius: 1px;
+    border: 2px solid var(''--customBlue'');
+    text-align: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    font-size: larger; 
+}
+.overlayButton:hover{
+    border: 2px solid var(--EKYellow);
+    transform: scale(1.1);
+}
+.overlayButton2{
+    position: absolute;
+    display: inline-block;
+    background-image: linear-gradient(to bottom, var(--EKLightBlue)0%,var(--blueish)70% );
+    border-radius: 1px;
+    border: 2px solid var(--EKLightBlue);
+    text-align: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    font-size: larger; 
+    color: var(--egg);
+    width: 10vw;
+    height: 6vh;
+}
+.overlayButton2:hover{
+    border: 2px solid var(--EKYellow);
+    transform: scale(1.1);
+}
+.overlayButton3{
+    position: absolute;
+    display: inline-block;
+    background-image: linear-gradient(to bottom,var(--EKLightPurple)0%,var(--jewel)70%  );
+    border-radius: 1px;
+    border: 2px solid var(--EKLightPurple);
+    text-align: center;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    font-size: larger; 
+    color: var(--egg);
+    width: 10vw;
+    height: 6vh;
+}
+.overlayButton3:hover{
+    border: 2px solid var(--EKYellow);
+    transform: scale(1.1);
+}
+.overlayTextCom{
+    position: relative;
+    text-align: center;
+    font-size: 10vw;
+    color: transparent;
+    background-color: white;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    transition: all 2s ease-in-out;
+}
+#overlayText1{
+    position: absolute;
+    font-size: 14vw;
+    color: transparent;
+    background-color: white;
+    /*background-image: linear-gradient(120deg, var(--EKYellow) 0%, var(--lightBlueish) 10%, var(--jewel) 50%);*/
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #39A8CA;
+    */
+    top: -15vh;
+    left: 2vw;
+    /*
+    animation-name: test;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    */
+    transition: all 2s ease-in-out;
+    
+}
+
+@keyframes test {
+    0%{background-position: 0% 0%;}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
+}
+  
+
+#overlayText2{
+    position: absolute;
+    font-size: 14vw;
+    color: transparent;
+    background-size: 300% 300%;
+    background-image: linear-gradient(120deg, var(--customYello) 0%, var(--lightBlueish) 10%, var(--jewel) 50%);
+    
+    -webkit-background-clip: text;
+    /*-webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #39A8CA;*/
+    
+    bottom: 0;
+    right: 2vw;
+    /*
+    animation-name: test;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    */
+    transition: all 2s ease-in-out;
+}
+.computerCard{
+    position: relative;
+    width: 60vw;
+    height: 60vh;
+    overflow: hidden;
+    /*box-shadow: 0 4px 8px 0 yellow;*/   
+    display: flex;
+    border: transparent solid;
+    transition: all 1s ease-in-out;  
+}
+
+.computerCard2{
+    position: relative;
+    width: 60vw;
+    height:auto;
+    min-height: 60vh;
+    overflow: hidden;
+    /*box-shadow: 0 4px 8px 0 yellow;*/   
+    display: flex;
+    border: transparent solid;
+    transition: all 1s ease-in-out;  
+}
+
+.cardContainer{
+    padding: 2px 16px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    opacity: 0.75;
+}
+
+.section1{   
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--customYello);
+    background-image: linear-gradient(to right, var(--blueish)0%,var(--EKLightBlue)80% ); 
+    width: 90vw;
+    
+}
+#section1Header{
+    color: var(--egg);
+    text-align: center;
+}
+.section2{
+    position: relative;
+    display: flex;
+    margin-bottom: 1vh;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--customYello);
+    background-image: linear-gradient(to right, var(--EKLightPurple)0%,var(--fuschia)70% );
+    width: 90vw;
+}
+
+.section3{
+    position: relative;
+    display: flex;
+    margin-bottom: 1vh;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--customYello);
+    background-image: linear-gradient(to left, #FBD72B,#F9484A);
+}
+
+.cardImage{
+    width: 60%;
+    height: 100%;
+}
+.cardText{
+    position: relative;
+    color: var(--egg);
+    color: var(--void);
+    font-size: large;
+}
+.cardText2{
+    color: var(--void);
+    font-size: large; 
+}
+.cardTextFA{
+    font-size: x-large;
+}
+.cardTextFADiv{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 150%;
+    
+}
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+.mainFooter{
+   
+   
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}
+.FooterImage{
+    width: 100%;
+    height: 95%;
+    transition: all .5s ease-in-out;
+}
+
+.FooterImage:hover{
+    scale: 1.2;
+}
+#servicesMainSection{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 98vh;
+}
+.fullScreenCard{
+    position: relative;
+    background-color: var(--void);
+    color: var(--egg);
+    width: 50%;
+    height: 100%; 
+    text-align: center;
+    transition: all 1s ease-in-out;
+}
+
+.fullScreenCard:hover{
+    box-shadow: 0 8px 16px 0 yellow;
+    z-index: 10;
+    transform: scale(1.1);
+}
+.servicesCardImage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: .45;
+    z-index: 1;
+}
+
+.servicesOverlayText{ 
+    position: absolute;
+    z-index: 10;
+    font-size:160%;
+    color: wheat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.tierOverlayText{
+    
+    position: absolute;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    font-size:150%;
+    color: wheat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.buildsMainSection{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    
+    width: 100vw;
+    height: 70vh;
+    padding-top: 1vh;
+}
+.buildsTypeCard{
+    position: relative;
+    background-color: #0E0B16;
+    color: var(--egg);
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    text-align: center;
+    box-shadow: 5px 5px rgb(0, 0, 0, 0.7);
+    transition: all 1s ease-in-out; 
+}
+
+.buildsTypeCard:hover{
+    scale: 1.1;
+    box-shadow: 10px 5px rgb(0, 0, 0, 0.7);
+}
+.buildsTypeCardTab{
+    position: relative;
+   background-color: #0E0B16;
+    color: var(--egg);
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    text-align: center;
+    transition: all 1s ease-in-out; 
+}
+.buildsTypeCard2{
+    position: relative;
+   background-color: #0E0B16;
+    color: var(--egg);
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    text-align: center;
+    transition: all 1s ease-in-out; 
+}
+.buildsOverlayUl{
+    list-style-type: none;
+}
+.buildSectionHeader{
+    text-align: center;
+    font-size: xx-large;
+   
+}
+.buildEntryCard{
+    
+    background-image: linear-gradient(to bottom,var(--EKLightPurple)0%,var(--jewel)70%  );
+}
+
+.buildHybridCard{
+    
+    background-image: linear-gradient(to bottom, var(--EKLightBlue)0%,var(--blueish)70% );
+
+}
+.buildHighCard{
+    background-image: linear-gradient(to bottom, #FBD72B,#F9484A)
+}
+#FAlandBGText{
+    position: absolute;
+    font-size: 14vw;
+    color: transparent;
+    background-image: linear-gradient(to right,var(--EKLightPurple),var(--jewel),var(--blueish)  );
+    position: absolute;
+    font-size: 14vw;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    top: -15vh;
+    left: 0;
+    transition: all 2s ease-in-out;
+    top: -15vh;
+    left: 0;
+    transition: all 2s ease-in-out;
+}
+.repairCardText{
+    position: relative;
+    text-align: center;
+}
+.repairSection1{
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--customYello);
+    background-image: linear-gradient(to right, var(--blueish)0%,var(--EKLightBlue)80% );
+}
+
+.repairSectionContainer{
+    display: flex;
+    justify-content: center;
+}
+.typeHeader{
+    font-size: 5vh;
+}
+
+.headerDiv{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.flexContainer{
+  
+    width: 60vw;
+    height: 25%;   
+}
+.reveal1{
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+.reveal1.visible{
+   opacity: 1;
+   box-shadow: 15px 10px rgb(75, 182, 246, 0.7);
+}
+
+.reveal2{
+    opacity: 0;
+    transition: all ease-in-out 1s;
+}
+.reveal2.visible{
+   opacity: 1;
+   box-shadow: 15px 10px rgb(71, 23, 246, 0.7);
+}
+.centerDiv{
+    display: flex;
+    justify-content: center;
+}
+.sliderContainer{
+    display: flex;
+    justify-content: center;
+}
+.tabImage{
+    width: 100%;
+}
+
+.innerTab{
+    padding-left: 5%;
+    width: 100vw;
+}
+
+.outerTabContainer{
+    height: 90vh;
+    min-height: fit-content;
+}
+
+.pcProductOuterContainer{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    
+    height: fit-content;
+    margin-bottom: 5vh;
+   
+}
+
+.pcProductInnerContainer{
+  
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 80%;
+
+    min-height: fit-content;
+}
+
+.performancePictureContainer{
+    margin-top: 2%;
+    width: fit-content;
+    
+    height: fit-content;
+    
+    min-width: 30%;
+    min-height: 40vh;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.partsSliderContainer{
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: fit-content;
+    min-height: 35vh;
+    max-height: min-content;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+}
+
+
+.productSliderContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.parts{
+    width: 80%;
+    height: 100%;
+    min-height: fit-content;
+
+}
+
+.partSlider{   
+    padding-left: .1%;
+    margin-top: .1%;
+    margin-bottom: .5%;
+    margin-right: 1%;
+    box-shadow: var(--EKLightBlue) 0px 5px 15px;
+    transition: all ease-in-out 1s;
+
+}
+
+.partSlider:hover{
+    scale: 1.1;
+}
+.slick-slide img{
+    width:100%;
+    border: 2px solid #fff;
+  }
+  .sliderH2{
+    margin-bottom: -1vh;
+  }
+.generalHeader{ 
+    text-align: center;
+    font-size: 3vh;
+}
+.tooltipText{
+    color: var(--EKLightBlue);
+}
+ 
+
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #60efff 0%, #0061ff 100% );
+    transform: translate3d(0px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
+        

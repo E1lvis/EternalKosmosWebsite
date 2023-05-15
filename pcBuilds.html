@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Builds</title>
+		<link rel="icon" href="images/logo.JPG">
+		<meta name="description" content="builds Page">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles2.css">
+        <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.min.css">
+		<script src="jquery-3.6.1.min.js"></script>
+		<script src="jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+        <script src="jq/builds_services copy.js"></script>
+
+        
+	</head>
+    <body>
+    <header>
+		<!--Navigation bar -->
+		<div class="navContainer">
+			<nav id="NavigationBar">
+				<div>
+					<ul id="navigationItems">
+						<li id="navCompanyName"><a href="Index.html">Eternal Kosmos</a></li>
+						<li><a href="Index.html">Home</a></li>
+						<li><a href="services.html">PC Services</a></li>
+						<li><a href="future_aspirations.html">Future Aspirations</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+			</nav>
+	    </div>
+        <!--End of navigation bar -->
+    </header>
+
+        <!--User can select from three options based on what they build. Click will then show the repective div using Jquery-->
+        <!--Start of user options-->
+        <h3 class="generalHeader">Our Builds</h3>
+        <div class="buildsMainSection" id="links">
+            <a href="pcProductPage.html" id="buildTest" aria-label="Foundation Build Link">
+                <div class="buildsTypeCard">
+                    <img src="images/fiberOptic.jpg" alt="Fiber Optic Image" class="servicesCardImage">
+                    <div class="tierOverlayText">
+                        <h1 >Foundation</h1>
+                        <p>Starter Build</p>
+                        <p id="starterPCPrice"></p>
+                        
+                    </div>                   
+                </div>
+            </a>
+                <a href="pcProductPage.html" id="plusBuild" aria-label="Plus Build Link">
+                    <div class="buildsTypeCard">
+                        <img src="images/combo.jpg" alt="combo image" class="servicesCardImage">
+                        <div class="tierOverlayText">
+                            <h1 >Plus</h1>
+                            <p>A Great Base </p>
+                            <p id="plusPCPrice"></p>
+                        </div>           
+                    </div>
+                </a>
+                <a href="pcProductPage.html" id="kosmosBuild" aria-label="Kosmos Build Link">
+                <div class="buildsTypeCard">
+                    <img src="images/gaming.jpg" alt="PC Repair pcImage" class="servicesCardImage">
+                    <div class="tierOverlayText">
+                        <h1>Kosmos</h1>
+                        <p>A Powerful 4K PC</p>
+                        <p id="kosmosPCPrice"></p>
+                        
+                    </div>
+                </div>
+                </a>
+        </div>
+         <!--End of user options-->
+
+        <br>
+        <br>
+        <!--Footer, consist of links to comany socials. Currently only instagram has been provided-->
+        <footer class="mainFooter">
+            <a href="http://www.instagram.com/ekosmos_inc ">
+                <img src="images/ig.png" alt="Instagram link" class="FooterImage" >
+            </a>
+           
+        </footer>
+    </body>
+
+    </html>
