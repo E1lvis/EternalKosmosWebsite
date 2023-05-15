@@ -1,0 +1,95 @@
+{   
+    "buildInfo":[
+    {
+        "name": "Kosmos  Build",
+        "price": "$1799.99",
+        "description": "A PC dedicated to great gaming at 4K"
+    }
+],
+    "images":[
+    {
+        "src": "6900XT_AL_FPS.jpg",
+        "title": "Apex Legends"
+    },
+    {
+        "src": "6900XT_CBP_FPS.jpg",
+        "title": "Cyberpunk 2077"
+    },
+    {
+        "src": "6900XT_RDR_FPS.jpg",
+        "title": "Red Dead Redemption 2"
+    },
+    {
+        "src": "6900XT_WZ_FPS.jpg",
+        "title": "Warzone"
+    }
+],
+    "parts":[
+        
+        {   
+            
+            "CPU": "Intel Core i7-13700KF",
+            "Price": "$397.99",
+            "Cores": "16",
+            "Clock": "3.4 GHz",
+            "Manufacturer": "Intel",
+            "TDP": "125 W"
+        },
+        {   
+            
+            "Cooler": "Scythe Fuma 2",
+            "Price": "$65.99",
+            "Fan RPM": "300 - 1500 RPM",
+            "Model": "Fuma 2 Rev.B",
+            "Manufacturer": "Scythe"
+           
+        },
+        {
+            "GPU": "ASRock Phantom Gaming D OC",
+            "Chipset": "Radeon RX 6900 XT",
+            "Price": "$629.99",
+            "Memory": "16 GB",
+            "Clock": "1925 MHz",
+            "Manufacturer": "ASRock",
+            "TDP": "300 W" 
+        },
+        {
+            "Memory": "G.Skill Trident Z RGB",
+            "Price": "$75.99",
+            "Speed": "DDR4-3600",
+            "Manufacturer": "G.Skill",
+            "Latency": "18"
+        },
+        {
+            "Storage": "Crucial P3 Plus",
+            "Price": "$179.99",
+            "Capacity": "2 TB",
+            "Manufacturer": "Crucial",
+            "Type": "SSD",
+            "Form": "M.2-2280"
+        },
+        {
+            "Motherboard": "Asus PRIME Z790M",
+            "Price": "$199.99",
+            "Manufacturer": "Asus",
+            "Chipset": "Intel Z790",
+            "Form": "Micro ATX"
+        },
+        {
+            "Case": "Phanteks Eclipse P400A",
+            "Price": "$109.99",
+            "Manufacturer": "Phanteks",
+            "Side Panel": "Tempered Glass",
+            "Dimensions": "18.504 x 8.268 x 18.307"
+        },
+        {
+            "PSU": "Corsair RM850x (2021)",
+            "Price": "$131.99",
+            "Manufacturer": "Corsair",
+            "Efficiency Rating": "80+ Gold",
+            "Wattage": "850 W",
+            "Modular": "Full"
+        }
+    
+    ]
+}

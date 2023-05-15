@@ -1,0 +1,86 @@
+{   
+    "buildInfo":[
+    {
+        "name": "Foundation  Build",
+        "price": "$999.99",
+        "description": "A great starter PC for those looking to get into PC gaming"
+    }
+],
+    "images":[
+        {
+            "src": "6700_AL_FPS.jpg",
+            "title": "Apex Legends"
+        },
+        {
+            "src": "6700_CBP_FPS.jpg",
+            "title": "Cyberpunk 2077"
+        },
+        {
+            "src": "6700_RDR_FPS.jpg",
+            "title": "Red Dead Redemption 2"
+        },
+        {
+            "src": "6700_WZ_FPS.jpg",
+            "title": "Warzone"
+        }
+    ],
+    "parts":[
+        
+        {   
+            
+            "CPU": "AMD Ryzen 5 5600X",
+            "Price": "$200",
+            "Cores": "6",
+            "Clock": "3.7 GHz",
+            "Manufacturer": "AMD",
+            "TDP": "65 W"
+            
+        },
+        {
+            "GPU": "ASapphire PULSE",
+            "Chipset": "Radeon RX 6700",
+            "Price": "$299.99",
+            "Memory": "10 GB",
+            "Clock": "1941 MHz",
+            "Manufacturer": "AMD",
+            "TDP": "220 W" 
+        },
+        {
+            "Memory": "Corsair Vengeance LPX",
+            "Price": "$46.99",
+            "Speed": "DDR4-3200",
+            "Manufacturer": "Corsair",
+            "Latency": "10"
+        },
+        {
+            "Storage": "Crucial P2",
+            "Price": "$72.98",
+            "Capacity": "1 TB",
+            "Manufacturer": "Crucial",
+            "Type": "SSD",
+            "Form": "M.2-2280"
+        },
+        {
+            "Motherboard": "ASRock B550 Phantom Gaming",
+            "Price": "$89.99",
+            "Manufacturer": "ASRock",
+            "Chipset": "AM4",
+            "Form": "ATX"
+        },
+        {
+            "Case": "Fractal Design Focus 2",
+            "Price": "$91.99",
+            "Manufacturer": "Fractal Design",
+            "Side Panel": "Tempered Glass",
+            "Dimensions": "18.583 x 8.465 x 17.756"
+        },
+        {
+            "PSU": "EVGA 850 BQ",
+            "Price": "$99.99",
+            "Manufacturer": "EVGA",
+            "Efficiency Rating": "80+ Bronze",
+            "Wattage": "850 W",
+            "Modular": "Semi"
+        }
+    ]
+}

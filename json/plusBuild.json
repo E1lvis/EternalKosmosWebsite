@@ -1,0 +1,79 @@
+{   
+    "buildInfo":[
+    {
+        "name": "Plus  Build",
+        "price": "$1499.99",
+        "description": "An all rounder PC great for 1440p gaming"
+    }
+],
+"images":[
+    {
+        "src": "3070TI_RDR2_FPS.jpg",
+        "title": "Red Dead Redemption 2"
+    },
+    {
+        "src": "3070TI_CBP_FPS.jpg",
+        "title": "Cyberpunk 2077"
+    }
+    
+],
+    "parts":[
+        
+        {   
+            
+            "CPU": "Intel Core i5-12400F",
+            "Price": "$200",
+            "Cores": "6",
+            "Clock": "2.5 GHz",
+            "Manufacturer": "Intel",
+            "TDP": "65 W"
+        },
+        {
+            "GPU": "MSI VENTUS 3X OC",
+            "Chipset": "GeForce RTX 3070 Ti",
+            "Price": "$629.99",
+            "Memory": "8 GB",
+            "Clock": "1575 MHz",
+            "Manufacturer": "MSI",
+            "TDP": "290 W" 
+        },
+        {
+            "Memory": "Corsair Vengeance LPX",
+            "Price": "$51.99",
+            "Speed": "DDR4-3600",
+            "Manufacturer": "Corsair",
+            "Latency": "18"
+        },
+        {
+            "Storage": "PNY CS1030",
+            "Price": "$57.98",
+            "Capacity": "1 TB",
+            "Manufacturer": "PNY",
+            "Type": "SSD",
+            "Form": "M.2-2280"
+        },
+        {
+            "Motherboard": "ASRock Z690M-ITX/ax Mini",
+            "Price": "$149.99",
+            "Manufacturer": "ASRock",
+            "Chipset": "Intel Z690",
+            "Form": "Mini ITX"
+        },
+        {
+            "Case": "Fractal Design Focus 2",
+            "Price": "$91.99",
+            "Manufacturer": "Fractal Design",
+            "Side Panel": "Tempered Glass",
+            "Dimensions": "18.583 x 8.465 x 17.756"
+        },
+        {
+            "PSU": "Silverstone Essential",
+            "Price": "$94.99",
+            "Manufacturer": "Silverstone",
+            "Efficiency Rating": "80+ Gold",
+            "Wattage": "750 W",
+            "Modular": "Semi"
+        }
+    
+    ]
+}

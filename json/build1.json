@@ -1,0 +1,58 @@
+{
+    "name": "Foundation Build",
+    
+    "CPUname": "AMD Ryzen 5 5600X",
+    "CPUprice": "$200",
+    "CPUcores": "6",
+    "CPUclock": "3.7 GHz",
+    "CPUmanufacturer": "AMD",
+    "CPUTDP": "65 W",
+
+    "GPUname": "ASapphire PULSE Radeon RX 6700",
+    "GPUprice": "$299.99",
+    "GPUMemory": "10 GB",
+    "GPUclock": "1941 MHz",
+    "GPUmanufacturer": "AMD",
+    "GPUTDP": "220 W",
+
+    "Memoryname": "Corsair Vengeance LPX",
+    "Memoryprice": "$46.99",
+    "Memoryspeed": "DDR4-3200",
+    "Memorymanufacturer": "Corsair",
+    "MemoryLatency": "10 ns",
+
+    "Storagename": "Crucial P2",
+    "Storageprice": "$72.98",
+    "StorageCapacity": "1 TB",
+    "Storagemanufacturer": "Crucial",
+    "Storagtype": "SSD",
+    "Storagform": "M.2-2280",
+
+    "MBname": "ASRock B550 Phantom Gaming",
+    "MBprice": "$89.99",
+    "MBsocket": "AM4",
+    "MBmanufacturer": "ASRock",
+    "MBform": "ATX",
+    "MBChipset": "AMD B550",
+
+    "PSUname": "EVGA 850 BQ",
+    "PSUprice": "$99.99",
+    "PSUwatt": "850 W",
+    "PSUmanufacturer": "EVGA",
+    "PSUcertification": "80+ Bronze",
+
+    "Casename": "Fractal Design Focus 2 RGB",
+    "Caseprice": "$70.99",
+    "Casetype": "ATX Mid Tower",
+    "Casemanufacturer": "Fractal Design",
+    "Casedimensions": "18.583 x 8.465 x 17.756"
+
+    
+
+
+
+
+
+
+    
+}
