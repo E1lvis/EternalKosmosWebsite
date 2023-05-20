@@ -229,6 +229,18 @@ background effect. The concept is the same for the background of a div, by incre
     border: 2px solid var(--EKYellow);
     transform: scale(1.1);
 }
+
+#IndexMainSentence{
+    position: relative;
+    text-align: center;
+    font-size: 5vw;
+    color: transparent;
+    background-color: white;
+    -webkit-background-clip: text;
+    background-size: 200% 200%;
+    transition: all 2s ease-in-out;
+
+}
 .overlayTextCom{
     position: relative;
     text-align: center;
