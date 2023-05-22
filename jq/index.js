@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
 //bxslider for runner index.html
   $("#slider").bxSlider({
@@ -15,5 +17,10 @@ $(document).ready(function() {
        
     });
 
+
+    $("#colorPicker").change(function(evt){
+    
+      $("html").css('background', $(this).val())
+    });
 });
 
